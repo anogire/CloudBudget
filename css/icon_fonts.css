@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icon_fonts/icomoon.woff?wmdym8') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.csv:before {
+  content: "\e900";
+}
+.fb:before {
+  content: "\e901";
+}
+.in:before {
+  content: "\e902";
+}
+.lang_switch:before {
+  content: "\e903";
+}
+.pdf:before {
+  content: "\e904";
+}
+.platform1:before {
+  content: "\e905";
+}
+.platform2:before {
+  content: "\e906";
+}
+.platform3:before {
+  content: "\e907";
+}
+.play-button:before {
+  content: "\e908";
+}
+.secure:before {
+  content: "\e909";
+}
+.storage:before {
+  content: "\e90a";
+}
+.twi:before {
+  content: "\e90b";
+}
+/*
+        <button class="button-lang" type="button" aria-label="click to change language">
+          <div class="lang-attribute">
+            <img src="img/en_flag.svg" class="img-flag" width="32" height="32" alt="" aria-label="current language">
+            <span class="font-nav">en</span>
+            <span class="icon lang_switch"></span>
+          </div>
+        </button>
+*/
