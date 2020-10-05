@@ -1,13 +1,10 @@
 .header {
-  max-width: 100%;
+  min-width: 100%;
   min-width: 300px;
   position: absolute;
+  top: 0;
   right: 0;
   left: 0;
-  top: 0;
-}
-.container-header {
-  min-width: 100%;
   padding-top: 15px;
   padding-right: 5px;
   padding-left: 5px;
@@ -22,13 +19,37 @@
 .nav-main {
   display: none;
 }
-.nav-main li:hover,
-.nav-main li:focus {
-  text-shadow: -0.3px 0 #fff, 0 0.3px #fff, 0.3px 0 #fff, 0 -0.3px #fff;
+.nav-main li {
+  position: relative;
+}
+.nav-main li:first-child {
+  margin-left: -5px;
+}
+.nav-main li:last-child {
+  margin-right: -5px;
 }
 .link-nav {
-  padding-right: 5px;
-  padding-left: 5px;
+  display: block;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.link-nav:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+}
+.link-nav:hover,
+.link-nav:focus {
+  text-shadow: -0.3px 0 #fff, 0 0.3px #fff, 0.3px 0 #fff, 0 -0.3px #fff;
 }
 .font-nav {
   font-size: 14px;
@@ -52,6 +73,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.button-lang:hover,
+.button-lang:focus {
+  outline: none;
+  text-shadow: -0.3px 0 #fff, 0 0.3px #fff, 0.3px 0 #fff, 0 -0.3px #fff;
+} 
 .button-header {
   width: 100px;
   height: 40px;
@@ -63,27 +89,20 @@
   justify-content: center;
   align-items: center;
 }
-.button-lang:hover,
-.button-lang:focus {
-  outline: none;
-  text-shadow: -0.3px 0 #fff, 0 0.3px #fff, 0.3px 0 #fff, 0 -0.3px #fff;
-}
-.button-header:active {
-  box-shadow: 0 0 5px #fff;
-} 
 .button-header:hover,
-.button-header:focus {
+.button-header:focus,
+.button-header:active {
   outline: none;
   box-shadow: 0 0 5px #fff;
   text-shadow: -0.3px 0 #fff, 0 0.3px #fff, 0.3px 0 #fff, 0 -0.3px #fff;
 }
 .lang_switch {
   color: #fff;
-  font-size: 10px;
+  font-size: 14px;
   padding-left: 5px;
 }
 @media (min-width: 576px) {
-  .container-header {
+  .header {
     min-width: 0;
     max-width: 540px;
     flex-direction: row;
@@ -91,11 +110,11 @@
     justify-content: space-between;
     margin: 0 auto;
   }
-  .font-nav {
+  .link-nav {
     font-size: 9px;
   }
   .button-lang {
-    margin-right: 0;
+    margin-right: 5px;
     width: 43px;
     height: 20px;
   }
@@ -126,12 +145,18 @@
     justify-content: center;
     align-items: center;
   }
+  .font-nav {
+    font-size: 12px;
+  }
+  .lang_switch {
+    font-size: 10px;
+  }
 }
 @media (min-width: 768px) {
-  .container-header {
+  .header {
     max-width: 720px;
   }
-  .font-nav {
+  .link-nav {
     font-size: 13px;
   }
   .button-lang {
@@ -148,7 +173,7 @@
   }
 }
 @media (min-width: 992px) {
-  .container-header {
+  .header {
     max-width: 960px;
     padding-top: 50px;
     padding-right: 15px;
@@ -163,13 +188,17 @@
   }
   .link-nav {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 10px; 
+    font-size: 14px;
+  }
+  .nav-main li:first-child {
+    margin-left: -10px;
+  }
+  .nav-main li:last-child {
+    margin-right: -10px;
   }
   .buttons-group {
     width: 25%;
-  }
-  .font-nav {
-    font-size: 14px;
   }
   .button-lang {
     width: 86px;
@@ -185,13 +214,15 @@
     width: 32px;
     height: 32px;
   }
+  .font-nav {
+    font-size: 14px;
+  }
+  .lang_switch {
+    font-size: 14px;
+  }
 }
 @media (min-width: 1200px) {
   .header {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  .container-header {
     max-width: 1140px;
   }
 }

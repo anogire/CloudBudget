@@ -2,7 +2,6 @@
   max-width: 100%;
   min-width: 300px;
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
-    url("../img/main_back_small.webp"),
     url("../img/main_back_small.jpg");
   background-size: cover;
   background-position: center;
@@ -84,13 +83,19 @@
 @media (min-width: 768px) {
   .section-title {
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
-      url("../img/main_back_2x.webp"),
-      url("../img/main_back_2x.jpg"),
-      url("../img/main_back.webp"),
       url("../img/main_back.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-title {
+      background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+        url("../img/main_back_2x.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
   .container-title {
     max-width: 720px;

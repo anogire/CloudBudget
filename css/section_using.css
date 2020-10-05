@@ -30,7 +30,7 @@
   line-height: 1.4;
   text-align: justify;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .link-learn-more {
   text-transform: capitalize;
@@ -38,6 +38,9 @@
   font-size: 12px;
   line-height: 1.4;
   color: #ed4c5c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .link-learn-more:hover,
 .link-learn-more:focus {
@@ -50,38 +53,40 @@
   display: flex;
 }
 .button-circle {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: calc(50% - 18px);
-  left: calc(50% - 18px);
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
   margin: auto auto;
   border-radius: 50%;
-  background-color: #fff; 
+  background-color: #ed4c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .play-button {
-  font-size: 36px;
-  color: #ed4c5c;
-  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
 }
 .button-circle:hover,
 .button-circle:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #fff, 0 0 2px 3px #ed4c5c;
+  background-color: #fff;
+  box-shadow: 0 0 2px 2px #ed4c5c, 0 0 2px 3px #fff;
+  color: #ed4c5c;
 }
 .button-circle:active {
   outline: none;
+  background-color: #ed4c5c;
+  box-shadow: 0 0 2px 2px #fff, 0 0 2px 3px #ed4c5c;
 }
-.play-button:hover,
-.play-button:focus {
-  outline: none;
-  color: #fff;
-  text-shadow: -0.5px 0 #ed4c5c, 0 0.5px #ed4c5c, 0.5px 0 #ed4c5c, 0 -0.5px #ed4c5c, 0 0 5px #ed4c5c;
-}
-.play-button:active {
-  outline: none;
+.button-circle:hover .play-button,
+.button-circle:focus .play-button {
   color: #ed4c5c;
-  text-shadow: none;
+}
+.button-circle:active .play-button {
+  color: #fff;
 }
 @media (min-width: 576px) {
   .section-using {
@@ -99,7 +104,8 @@
     left: calc(50% - 24px);
   }
   .play-button {
-    font-size: 48px;
+    font-size: 14px;
+    color: #fff;
   }
 }
 @media (min-width: 768px) {
@@ -136,11 +142,11 @@
   .button-circle {
     width: 66px;
     height: 66px;
-    top: calc(50% - 33px);
-    left: calc(50% - 33px);
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
   }
   .play-button {
-    font-size: 66px;
+    font-size: 18px;
   }
   .link-learn-more {
     font-size: 14px;

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../icon_fonts/icomoon.woff?wmdym8') format('woff');
+  src: url('../icon_fonts/icomoon.woff?wsv77b') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -52,12 +52,3 @@
 .twi:before {
   content: "\e90b";
 }
-/*
-        <button class="button-lang" type="button" aria-label="click to change language">
-          <div class="lang-attribute">
-            <img src="img/en_flag.svg" class="img-flag" width="32" height="32" alt="" aria-label="current language">
-            <span class="font-nav">en</span>
-            <span class="icon lang_switch"></span>
-          </div>
-        </button>
-*/

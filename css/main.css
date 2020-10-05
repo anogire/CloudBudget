@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+.qqq {
+  border: 1px solid black;
+}
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -10,6 +13,18 @@ body {
 }
 a {
   text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: box-shadow 0.5s, text-shadow 0.5s;
+  transition-delay: 0.1s;
 }
 .back-red {
   background-color: #ed4c5c;
@@ -28,26 +43,4 @@ a {
 .caption-h2-alt {
   text-transform: none;
   color: #fff;
-}
-.nav-main,
-.features-description,
-.technology-description,
-.focus-icon-list,
-.info-list,
-.services-footer,
-.icon-footer {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.button-header,
-.button-main,
-.button-circle,
-.button-lang,
-.button-submit {
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  transition: box-shadow 0.5s, text-shadow 0.5s;
-  transition-delay: 0.1s;
 }

@@ -86,6 +86,7 @@
   font-size: 12px;
   line-height: 1.5;
   color: #ed4c5c;
+  padding: 10px;
 }
 .link-read-more:hover,
 .link-read-more:focus {
@@ -159,7 +160,7 @@
   }
   .card-features {
     padding-top: 32px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     padding-right: 32px;
     padding-left: 32px;
   }
