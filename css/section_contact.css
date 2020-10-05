@@ -44,6 +44,7 @@
   height: 30px;
   margin-bottom: 10px;
   padding-left: 30px;
+  background-color: #fff;
 }
 .input-main::placeholder,
 .select-main {

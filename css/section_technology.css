@@ -66,55 +66,31 @@
   line-height: 1.2;
   color: rgba(16, 16, 16, 0.08);
 }
-.storage,
-.secure,
-.pdf,
-.csv {
-  color: #ed4c5c;
-  position: absolute;
-}
-
-.storage {
-  font-size: 40px;
-  left: calc(50% - 20px);
-  bottom: -15%;
-}
-.storage:hover,
-.storage:focus {
-  font-size: 42px;
-}
-.secure {
-  font-size: 33px;
-  left: calc(50% - 16px);
-  bottom: -10%;
-}
-.secure:hover,
-.secure:focus {
-  font-size: 35px;
-}
-.pdf {
-  font-size: 35px;
-  left: calc(50% - 18px);
-  bottom: -9%;
-}
-.pdf:hover,
-.pdf:focus {
-  font-size: 37px;
-}
-.csv {
-  font-size: 27px;
-  left: calc(50% - 14px);
-  bottom: -2%;
-}
-.csv:hover,
-.csv:focus {
-  font-size: 29px;
-}
 .tech-position {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+.position-num {
+  color: #ed4c5c;
+  position: absolute;
+}
+.storage {
+  font-size: 35px;
+  bottom: -10%;
+  left: calc(50% - 16px);
+}
+.secure {
+  font-size: 30px;
+  bottom: -8%;
+  left: calc(50% - 16px);
+}
+.pdf,
+.csv {
+  font-size: 28px;
+  bottom: -4%;
+  left: calc(50% - 14px);
 }
 @media (min-width: 576px) {
   .section-technology {
@@ -135,36 +111,17 @@
     max-width: 720px;
   }
   .storage {
-    font-size: 80px;
-    left: calc(50% - 40px);
-  }
-  .storage:hover,
-  .storage:focus {
-    font-size: 82px;
+    font-size: 70px;
+    left: calc(50% - 34px);
   }
   .secure {
-    font-size: 66px;
-    left: calc(50% - 33px);
+    font-size: 60px;
+    left: calc(50% - 30px);
   }
-  .secure:hover,
-  .secure:focus {
-    font-size: 68px;
-  }
-  .pdf {
-    font-size: 70px;
-    left: calc(50% - 35px);
-  }
-  .pdf:hover,
-  .pdf:focus {
-    font-size: 72px;
-  }
+  .pdf,
   .csv {
     font-size: 55px;
-    left: calc(50% - 27px);
-  }
-  .csv:hover,
-  .csv:focus {
-    font-size: 57px;
+    left: calc(50% - 26px);
   }
   .font-num {
     font-size: 100px;

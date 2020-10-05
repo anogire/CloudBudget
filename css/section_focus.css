@@ -28,7 +28,7 @@
   text-align: justify;
   color: #fff;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .focus-icon-list {
   display: flex;
@@ -36,16 +36,15 @@
 }
 .focus-icon-list li {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
 }
 .focus-icon-list li:first-child {
-  padding-left: 0;
+  margin-left: -10px;
 }
 .link-platform {
   display: block;
+  font-size: 16px;
+  color: #fff;
 }
 .link-platform:after {
   content: '';
@@ -56,18 +55,8 @@
   left: 0;
   padding: 10px;
 }
-.platform1,
-.platform2,
-.platform3 {
-  font-size: 16px;
-  color: #fff;
-}
-.platform1:hover,
-.platform1:focus,
-.platform2:hover,
-.platform2:focus,
-.platform3:hover,
-.platform3:focus {
+.link-platform:hover,
+.link-platform:focus {
   text-shadow: -0.5px 0 #fff, 0 0.5px #fff, 0.5px 0 #fff, 0 -0.5px #fff, 0 0 5px #fff;
   color: #ed4c5c;
 }
@@ -76,7 +65,7 @@
 }
 .img-focus {
   max-width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   border-radius: 15px;
   object-fit: cover;
   background-color: transparent;
@@ -90,9 +79,7 @@
   .focus-text {
     font-size: 14px;
   }
-  .platform1,
-  .platform2,
-  .platform3 {
+  .link-platform {
     font-size: 20px;
   }
 }
@@ -130,14 +117,8 @@
   .focus-text {
     padding-top: 40px;
   }
-  .platform1,
-  .platform2,
-  .platform3 {
+  .link-platform {
     font-size: 26px;
-  }
-  .focus-icon-list li {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   .caption-h2-alt {
     font-size: 30px;
@@ -158,9 +139,7 @@
   .caption-h2-alt {
     font-size: 36px;
   }
-  .platform1,
-  .platform2,
-  .platform3 {
+  .link-platform {
     font-size: 32px;
   }
   .focus-text {

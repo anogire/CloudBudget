@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../icon_fonts/icomoon.woff?wsv77b') format('woff');
+  src:  url('../icon_fonts/icomoon.woff?et1g8u') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
+
 .icon {
   font-family: 'icomoon' !important;
   speak: never;

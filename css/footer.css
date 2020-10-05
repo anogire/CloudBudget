@@ -36,6 +36,7 @@
   color: #101010;
 }
 .info-list {
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
@@ -81,16 +82,15 @@
 }
 .icon-footer li {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
 }
 .icon-footer li:first-child {
-  padding-left: 0;
+  margin-left: -10px;
 }
 .link-icon {
   display: block;
+  font-size: 12px;
+  color: #101010;
 }
 .link-icon:after {
   content: '';
@@ -101,18 +101,8 @@
   left: 0;
   padding: 10px;
 }
-.fb,
-.in,
-.twi {
-  font-size: 12px;
-  color: #101010;
-}
-.fb:hover,
-.fb:focus,
-.in:hover,
-.in:focus,
-.twi:hover,
-.twi:focus {
+.link-icon:hover,
+.link-icon:focus {
   text-shadow: -0.5px 0 #101010, 0 0.5px #101010, 0.5px 0 #101010, 0 -0.5px #101010, 0 0 5px #101010;
   color: #fff;
 }
@@ -176,12 +166,19 @@
   .footer-items-title {
     margin-bottom: 33px;
   }
-  .icon-footer li {
-    padding-top: 10px;
-    padding-right: 5px;
-  }
   .info-list-item:first-child {
     padding-right: 100px;
+  }
+  .icon-footer li {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .icon-footer li:first-child {
+    margin-left: -5px;
+  }
+  .link-icon:after {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 @media (min-width: 1200px) {
@@ -197,18 +194,13 @@
   .info-list {
     padding-bottom: 86px;
   }
-  .icon-footer {
-    padding-top: 10px;
-  }
   .link-footer,
   .link-footer:after {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-right: 25px;
   }
-  .fb,
-  .in,
-  .twi {
+  .link-icon {
     font-size: 14px;
   } 
 }
