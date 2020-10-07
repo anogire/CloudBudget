@@ -6,18 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS User Interface</title>
   <meta name="description" content="fonts and elements of user interface">
-  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/icon_fonts.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/section_title.css">
-  <link rel="stylesheet" href="css/section_using.css">
-  <link rel="stylesheet" href="css/section_features.css">
-  <link rel="stylesheet" href="css/section_technology.css">
-  <link rel="stylesheet" href="css/section_focus.css">
-  <link rel="stylesheet" href="css/section_contact.css">
-  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -29,12 +19,21 @@
     <ul class="nav-main">
       <li><a href="/" class="link-nav font-nav">Main Navigation Item</a></li>
     </ul>
-    <button class="button-header" type="button" aria-label="click on the button to log in">
-      <span class="font-nav">Button 1</span>
+    <button class="button-header font-nav" type="button" aria-label="click on the button to log in">
+      Button 1
     </button><br>
     <button class="button-main" type="button" aria-label="click on the button to sign up">
-      <span class="font-button-main">Button 2</span>
+      Button 2
     </button><br>
+  </div><br>
+  <button class="button-submit" type="button" aria-label="send your data to contact our support team">
+    Button 3
+  </button>
+  <span class="using-text">Button for play video:</span>
+  <div class="video-wrap">
+    <button type="button" class="button-circle icon play-button"
+      aria-label="play video about using Cloud Budget Management Software">
+    </button>
   </div>
   <span class="using-text">
     Paragraph.<br>
@@ -48,47 +47,54 @@
     Link
   </a>
   <div class="tech-position">
-    <a href="/" aria-label="Click to read about our Cloud Storage">
-      <span class="icon storage"></span>
-      <span class="font-num">01</span>
-    </a>
-  </div>
-  <span class="using-text">Button for play video:</span>
-  <div class="video-wrap">
-    <button type="button" class="button-circle" aria-label="play video about using Cloud Budget Management Software">
-      <span class="icon play-button"></span>
-    </button>
+    <span class="position-num icon storage"></span>
+    <span class="font-num">01</span>
   </div>
   <span class="using-text">
     Form elements:
   </span>
   <form class="contact-form">
-    <input class="input-main" type="text" name="first-name" placeholder="First name" maxlength="50"
+    <input class="form-item input-main" type="text" name="first-name" placeholder="First name" maxlength="50"
       aria-label="enter your first name">
-    <select class="select-main" name="service" aria-label="choose our service options">
-      <option value="" disabled selected>Select service</option>
-      <option value="service1">service1</option>
-      <option value="service2">service2</option>
-      <option value="service3">service3</option>
-    </select>
+    <div class="form-item">
+      <select class="select-main" name="service" aria-label="choose our service options">
+        <option value="" disabled selected>Select service</option>
+        <option value="service1">service1</option>
+        <option value="service2">service2</option>
+        <option value="service3">service3</option>
+      </select>
+      <button class="check-arrow" type="button" aria-label="choose our service options"></button>
+    </div>
   </form>
   <div class="back-red">
-    <a href="/" aria-label="click to go to the platform1"><span class="icon platform1"></span></a>
-    <a href="/" aria-label="click to go to the platform2"><span class="icon platform2"></span></a>
-    <a href="/" aria-label="click to go to the platform3"><span class="icon platform3"></span></a>
+    <ul class="focus-icon-list">
+      <li>
+        <a href="/" class="link-platform icon platform1" aria-label="click to go to the platform1"></a>
+      </li>
+      <li>
+        <a href="/" class="link-platform icon platform2" aria-label="click to go to the platform2"></a>
+      </li>
+      <li>
+        <a href="/" class="link-platform icon platform3" aria-label="click to go to the platform3"></a>
+      </li>
+    </ul>
   </div>
   <br>
   <div class="back-gray">
     <br>
     <ul class="services-footer">
-      <li><a href="/" class="link-footer"><span class="font-footer-alt">Footer Navigation Item</span></a></li>
+      <li><a href="/" class="link-footer">Footer Navigation Item</a></li>
     </ul>
     <br>
     <ul class="icon-footer">
       <li>
-        <a href="/" class="link-icon" aria-label="go to our facebook page"><span class="icon fb"></span></a>
-        <a href="/" class="link-icon" aria-label="go to our linkedin page"><span class="icon in"></span></a>
-        <a href="/" class="link-icon" aria-label="go to our twitter page"><span class="icon twi"></span></a>
+        <a href="/" class="link-icon icon fb" aria-label="go to our facebook page"></a>
+      </li>
+      <li>
+        <a href="/" class="link-icon icon in" aria-label="go to our linkedin page"></a>
+      </li>
+      <li>
+        <a href="/" class="link-icon icon twi" aria-label="go to our twitter page"></a>
       </li>
     </ul>
   </div>

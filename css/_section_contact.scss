@@ -1,0 +1,194 @@
+.section-contact {
+  max-width: 100%;
+  min-width: $minimum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include media-breakpoint-up(xs) {
+    /*min-width: 0;*/
+    max-width: map-get($container-width, xs);
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: map-get($container-width, sm);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: map-get($container-width, md);
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: map-get($container-width, lg);
+    padding-top: 118px;
+    padding-bottom: 122px;
+  }
+}
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @include media-breakpoint-up(sm) {
+    width: 50%;
+    padding-right: 10px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 445px;
+    padding-right: 0;
+  }
+}
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  @include media-breakpoint-up(xs) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    /*align-items: flex-start;*/
+    margin-top: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 540px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.contact-text {
+  display: block;
+  font-weight: map-get($weights, md);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: justify;
+  padding-top: 20px;
+  @include media-breakpoint-up(xs) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 50px;
+  }
+}
+.form-item{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1.1;
+  border: none;
+  font-weight: map-get($weights, md);
+  color: $color-text-secondary;
+  background-color: #fff;
+  margin-bottom: 10px;
+  @include media-breakpoint-up(xs) {
+    max-width: 47%;
+    height: 45px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 24px;
+  }
+}
+.input-main {
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding-left: 30px;
+  padding-right: 10px;
+  &::placeholder {
+    color: rgba(19, 39, 67, 0.5);
+  }
+  @include media-breakpoint-up(lg) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      max-width: 47%;
+    }
+  }
+}
+.select-main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: rgba(19, 39, 67, 0.5);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.check-arrow {
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  top: 40%;
+  right: 25px;
+  background-color: rgba(19, 39, 67, 0.5);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  @include media-breakpoint-up(md) {
+    width: 14px;
+  }
+}
+.button-submit {
+  width: 100px;
+  height: 40px;
+  font-weight: map-get($weights, md);
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $color-marker-primary;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid #fff;
+    box-shadow: shadow-around-box($color-marker-primary, 2px, 2px);
+  }
+  &:active {
+    outline: none;
+    background-color: #fff;
+    border: 1px solid $color-marker-primary;
+    box-shadow: shadow-around-box($color-marker-primary, 5px, 0);
+    color: $color-marker-primary;
+  } 
+  @include media-breakpoint-up(md) {
+    width: 160px;
+    height: 50px;
+  }
+}

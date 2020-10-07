@@ -1,0 +1,6 @@
+@function shadow-around-text($color, $size) {
+  @return -#{$size} 0 $color, 0 #{$size} $color, #{$size} 0 $color, 0 -#{$size} $color;
+}
+@function shadow-around-box($color, $size, $stretch) {
+  @return 0 0 #{$size} #{$stretch} $color;
+}

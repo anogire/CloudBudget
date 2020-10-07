@@ -1,0 +1,38 @@
+body {
+  font-family: $primary-font;
+  font-weight: map-get($weights, sm);
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+}
+.caption-h2,
+.caption-h2-alt {
+  font-weight: map-get($weights, lg);
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin: 0;
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+}
+.caption-h2-alt {
+  text-transform: none;
+  color: #fff;
+}
+.text-borders {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.back-red {
+  background-color: $color-marker-primary;
+}
+.back-gray {
+  background-color: $color-back-secondary;
+}
