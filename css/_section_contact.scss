@@ -10,7 +10,6 @@
   padding-right: 15px;
   padding-left: 15px;
   @include media-breakpoint-up(xs) {
-    /*min-width: 0;*/
     max-width: map-get($container-width, xs);
     margin: 0 auto;
     padding-top: 50px;
@@ -65,7 +64,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    /*align-items: flex-start;*/
     margin-top: 0;
   }
   @include media-breakpoint-up(lg) {

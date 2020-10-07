@@ -14,7 +14,6 @@
   padding-left: 5px;
   @include media-breakpoint-up(xs) {
     max-width: map-get($container-width, xs);
-    /*min-width: 0;*/
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -90,17 +89,9 @@
     }
   }
 }
-
 .link-nav {
   display: block;
   padding: 5px;
-  /*
-  &:after {
-    content: '';
-    position: absolute;
-    padding: 5px;
-  }
-  */
   &:hover,
   &:focus {
     text-shadow: shadow-around-text(#fff, 0.4px);
@@ -153,7 +144,6 @@
   &:focus,
   &:active {
     outline: none;
-    /*box-shadow: 0 0 5px #fff;*/
     box-shadow: shadow-around-box(#fff, 5px, 0);
     text-shadow: shadow-around-text(#fff, 0.4px);
   }

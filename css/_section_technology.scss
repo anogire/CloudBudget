@@ -10,7 +10,6 @@
   padding-right: 15px;
   padding-left: 15px;
   @include media-breakpoint-up(xs) {
-    /*min-width: 0;*/
     max-width: map-get($container-width, xs);
     margin: 0 auto;
   }

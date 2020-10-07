@@ -26,7 +26,6 @@
   }
 }
 .container-title {
-  /*min-width: 100%;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +36,6 @@
   padding-left: 15px;
   @include media-breakpoint-up(xs) {
     max-width: map-get($container-width, xs);
-    /*min-width: 0;*/
     margin: 0 auto;
   }
   @include media-breakpoint-up(sm) {
